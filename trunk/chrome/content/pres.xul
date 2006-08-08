@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://imagedownload/locale/pres.dtd">
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        title="&title.label;" onload="ImDoSetting.onLoad();">
+<script type="application/x-javascript" src="pres.js" />
+<groupbox id="imge-filter">
+<label value="&filter.label;"/>
+<hbox align="center">
+  <label value="&width_filter.label;" control="filter-width"/>
+  <textbox id="filter-width"/>
+  <label value="&pix.label;"/>
+</hbox>
+<hbox align="center" >
+  <label value="&height_filter.label;" control="filter-height"/>
+  <textbox id="filter-height"/>
+  <label value="&pix.label;"/>
+</hbox>
+<hbox align="center">
+  <label value="&type_filter.label;" control="filter-type"/>
+  <textbox id="filter-type"/>
+</hbox>
+</groupbox>
+<groupbox id="category-settings">
+<label value="&category_setting.label;"/>
+<listbox id="category-list" ondblclick="ImDoSetting.onItemDbclick();" oncontextmenu="ImDoSetting.onContextMenu();">
+  <listhead>
+    <listheader label="&list_head1.label;"/>
+    <listheader label="&list_head2.label;"/>
+  </listhead>
+  <listcols>
+    <listcol />
+    <listcol flex="1"/>
+  </listcols>
+</listbox>
+<hbox align="center">
+  <label 	value="&new_category.label;" 	control="category"/>
+  <textbox 	id="category"/>
+  <label 	value="&new_folder.label;" 		control="download-folder"/>
+  <textbox 	id="download-folder"/>
+  <button 	id="browse" 	label="&browse.label;" 	command="GetFolder"/>
+  <button 	id="add" 		label="&add.label;" 	command="Add"/>
+</hbox>
+<hbox align="center">
+  <button  label="&exit.label;" 	command="Exit"/>
+  <button  label="&save.label;"   	command="Save"/>
+</hbox>
+<popupset>
+  <popup id="context-menu">
+    <menuitem label="&delete.label;" command="Delete"/>
+    <menuitem label="&modify.label;" command="ItemDbclick"/>
+  </popup>
+</popupset>
+</groupbox>
+<command id="Delete" 		oncommand="ImDoSetting.onDelete();"/>
+<command id="Add"    		oncommand="ImDoSetting.onAdd();"/>
+<command id="Modify" 		oncommand="ImDoSetting.onModify();"/>
+<command id="ItemDbclick"   oncommand="ImDoSetting.onItemDbclick();"/>
+<command id="GetFolder"    	oncommand="ImDoSetting.browseAndGetFolder();"/>
+<command id="Save"   		oncommand="ImDoSetting.onSave();"/>
+<command id="Exit" 			oncommand="ImDoSetting.onExit();"/>
+</window>

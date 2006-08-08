@@ -1,0 +1,18 @@
+<!ENTITY title.label 			"Image Download 设置">
+<!ENTITY filter.label 			"过滤以下图片">
+<!ENTITY width_filter.label  	"宽度小于　　　">
+<!ENTITY height_filter.label 	"高度小于　　　">
+<!ENTITY type_filter.label   	"文件类型为　　">
+<!ENTITY pix.label 				"像素">
+<!ENTITY category_setting.label "分类设置">
+<!ENTITY list_head1.label 		"类别">
+<!ENTITY list_head2.label 		"下载目录">
+<!ENTITY new_category.label 	"类别">
+<!ENTITY new_folder.label 		"下载目录">
+<!ENTITY save.label 			"保存设置">
+<!ENTITY add.label  			"增加/修改">
+<!ENTITY modify.label 			"修改">
+<!ENTITY delete.label 			"删除">
+<!ENTITY exit.label 			"退出">
+<!ENTITY browse.label			"浏览">
+

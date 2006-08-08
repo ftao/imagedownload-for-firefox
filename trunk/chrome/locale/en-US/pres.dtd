@@ -1,0 +1,18 @@
+<!ENTITY title.label 			"Image Download Setting">
+<!ENTITY filter.label 			"Do Not Download pictures">
+<!ENTITY width_filter.label  	"Width less than  ">
+<!ENTITY height_filter.label 	"Height less than ">
+<!ENTITY type_filter.label   	"File Type is     ">
+<!ENTITY pix.label 				"pixes">
+<!ENTITY category_setting.label "CategorySetting">
+<!ENTITY list_head1.label 		"Category">
+<!ENTITY list_head2.label 		"Download Folder">
+<!ENTITY new_category.label 	"Category">
+<!ENTITY new_folder.label 		"Download Folder">
+<!ENTITY save.label 			"Save">
+<!ENTITY add.label  			"Add/Modify">
+<!ENTITY modify.label 			"Modify">
+<!ENTITY delete.label 			"delete">
+<!ENTITY exit.label 			"Exit">
+<!ENTITY browse.label			"browse">
+
