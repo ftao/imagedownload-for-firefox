@@ -1,0 +1,7 @@
+content	imagedownload	chrome/content/
+overlay	chrome://browser/content/browser.xul	chrome://imagedownload/content/overlay.xul
+overlay chrome://communicator/content/pref/preftree.xul chrome://imagedownload/content/pres.xul
+locale	imagedownload	en-US	chrome/locale/en-US/
+locale	imagedownload	zh-CN	chrome/locale/zh-CN/
+
+

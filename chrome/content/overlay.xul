@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://imagedownload/locale/overlay.dtd">
+<overlay id="imagedownload-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <popup id="contentAreaContextMenu">
+	<menuseparator />
+    <menu  label="&down_image_to.label;" >
+	<menupopup id="ImagesDownloadTo"  onpopupshowing="ImDo.setContextMenu();" >
+	</menupopup>
+	</menu>
+	<menuseparator />
+  </popup>
+</overlay>
