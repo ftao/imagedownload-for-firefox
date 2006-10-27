@@ -1,0 +1,18 @@
+<!ENTITY title.label 			"Impostazioni di Image Download">
+<!ENTITY filter.label 			"Non scaricare le immagini">
+<!ENTITY width_filter.label  	"di larghezza inferiore a  ">
+<!ENTITY height_filter.label 	"di altezza inferiore a ">
+<!ENTITY type_filter.label   	"Tipo di file     ">
+<!ENTITY pix.label 				"pixel">
+<!ENTITY category_setting.label "Imposta categoria">
+<!ENTITY list_head1.label 		"Categoria">
+<!ENTITY list_head2.label 		"Cartella di destinazione">
+<!ENTITY new_category.label 	"Categoria">
+<!ENTITY new_folder.label 		"Cartella di destinazione">
+<!ENTITY save.label 			"Salva">
+<!ENTITY add.label  			"Aggiungi/Modifica">
+<!ENTITY modify.label 			"Modifica">
+<!ENTITY delete.label 			"Elimina">
+<!ENTITY exit.label 			"Esci">
+<!ENTITY browse.label			"Sfoglia">
+
