@@ -15,4 +15,5 @@
 <!ENTITY delete.label 			"删除">
 <!ENTITY exit.label 			"退出">
 <!ENTITY browse.label			"浏览">
-
+<!ENTITY auto_sub_folder.label  "自动建立子目录">
+<!ENTITY write_log_file.label   "写入日志文件">
