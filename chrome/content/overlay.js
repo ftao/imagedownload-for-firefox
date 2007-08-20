@@ -5,6 +5,11 @@
 // Released under the GPL 2 license
 // http://www.gnu.org/copyleft/gpl.html
 
+/*
+XPathExpress Example
+strats-with(@href,"http")
+ends-with(@href,"jpg");
+*/
 var ImDo = 
 {
 	onLoad: 
@@ -193,13 +198,19 @@ var ImDo =
 			return ;
 		}
 		var doc = document.getElementById("content").selectedBrowser.contentDocument;
-		var images = doc.getElementsByTagName("img");
+		xPathExpr = "//img[";
+		xPathExpr += "@width>"+this.filter_width;
+		xPathExpr += " and @height>" + this.filter_height;
+		//if(this.filter_height
+		xPathExpr += +"]";//ends-with(@href, 'http://mail') 
+		var images = doc.evaluate(xPathExpr,doc, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
+		console.log("img num:"+images.snapshotLength);
 		//alert(doc.location);
 		//alert("images length="+images.length);
 		var path = this.category[index].split('|')[1];
 		var sub_path = "";
 		//alert(this.path);
-		if (images.length != 0)	//we will at first create sub folder and  then write something to log file .It may be useful  to magner your download images.
+		if (images.snapshotLength != 0)	//we will at first create sub folder and  then write something to log file .It may be useful  to magner your download images.
 		{
 			var now = new Date();
 			var sub_name = now.getFullYear();
@@ -219,14 +230,13 @@ var ImDo =
 			log += "Reference Page Title : "+doc.title+"\n"; 
 			log += "URL List: \n";
 			var savedNum = 0;
-			for (var i = 0; i<images.length; i++)
+			for (var i = 0; i<images.snapshotLength; i++)
 			{
-				if (images[i].width < this.filter_width|| images[i].height < this.filter_height)
-					continue;
-				var ext = images[i].src.substr(images[i].src.lastIndexOf('.')+1,images[i].src.length);
+				var src = images.snapshotItem(i).src;
+				var ext = src.substr(src.lastIndexOf('.')+1,src.length);
 				if ( this.filter_type.indexOf(ext) != -1)
 					continue;
-				ImDo.saveImage(sub_path,images[i].src);
+				ImDo.saveImage(sub_path,src);
 				savedNum ++;
 				log += images[i].src+"\n";
 			}

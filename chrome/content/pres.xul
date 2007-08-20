@@ -41,6 +41,13 @@
   <button 	id="browse" 	label="&browse.label;" 	command="GetFolder"/>
   <button 	id="add" 		label="&add.label;" 	command="Add"/>
 </hbox>
+<hbox align="contenr">
+<checkbox	id="auto_sub_folder"/>
+<label value="&auto_sub_folder.label;" control="auto_sub_folder"/>
+<checkbox	id="write_log_file"/>
+<label value="&write_log_file.label;" control="write_log_file"/>
+
+</hbox>
 <hbox align="center">
   <button  label="&exit.label;" 	command="Exit"/>
   <button  label="&save.label;"   	command="Save"/>
